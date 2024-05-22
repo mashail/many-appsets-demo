@@ -6,6 +6,7 @@ This is an exaple repository for Organizing your applications with Argo CD.
 
 The starting point should be a 3 level structure as shown in the image below
 
+
 ![structure](docs/hierarchy-of-manifests.png)
 
 At the lowest level we have the Kubernetes manifests that define how the application runs (category 1 of manifests). These are your Kustomize or Helm templates and they are completely self-contained, meaning that they can be deployed on their own on any cluster even without Argo CD. We have covered in detail the structure of these files in the promotion blog post. 
