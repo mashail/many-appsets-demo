@@ -8,7 +8,7 @@ The starting point should be a 3 level structure as shown in the image below
 
 
 ![structure](docs/hierarchy-of-manifests.png)
-
+.....
 At the lowest level we have the Kubernetes manifests that define how the application runs (category 1 of manifests). These are your Kustomize or Helm templates and they are completely self-contained, meaning that they can be deployed on their own on any cluster even without Argo CD. We have covered in detail the structure of these files in the promotion blog post. 
 
 One level above, we have the Application Set as explained in the previous section. These wrap the main Kubernetes manifests into Argo CD applications (category 2 of manifests). Notice that in most cases you only need ApplicationSets and not individual Application CRDs.
